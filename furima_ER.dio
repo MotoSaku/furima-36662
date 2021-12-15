@@ -53,7 +53,7 @@
                 <mxCell id="20" value="addresses（発送先情報）" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
                     <mxGeometry x="97.5" y="680" width="150" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="21" value="&lt;ul&gt;&lt;li&gt;user&lt;/li&gt;&lt;li&gt;post_code（郵便番号）&lt;/li&gt;&lt;li&gt;cuty（都道府県）&lt;/li&gt;&lt;li&gt;municipalities（市区町村）&lt;/li&gt;&lt;li&gt;address（住所）&lt;/li&gt;&lt;li&gt;building（建物名：任意）&lt;/li&gt;&lt;li&gt;tel&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" vertex="1" parent="1">
+                <mxCell id="21" value="&lt;ul&gt;&lt;li&gt;post_code（郵便番号）&lt;/li&gt;&lt;li&gt;cuty（都道府県）&lt;/li&gt;&lt;li&gt;municipalities（市区町村）&lt;/li&gt;&lt;li&gt;address（住所）&lt;/li&gt;&lt;li&gt;building（建物名：任意）&lt;/li&gt;&lt;li&gt;tel&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" vertex="1" parent="1">
                     <mxGeometry x="70" y="705" width="190" height="185" as="geometry"/>
                 </mxCell>
                 <mxCell id="35" style="edgeStyle=none;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;fontSize=20;startArrow=diamondThin;startFill=1;endArrow=diamondThin;endFill=1;" edge="1" parent="1" source="32">

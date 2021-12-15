@@ -17,7 +17,6 @@
 
 - has_many :items
 - has_many :histories
-- has_many :comments
 
 
 
@@ -49,13 +48,12 @@
 | ------------------ | ---------- | ------------------------------ |
 | user               | references | null: false, foreign_key: true |
 | item               | references | null: false, foreign_key: true |
-| address            | references | null: false,                   |
 
 ### Association
 
 - belongs_to :user
 - belongs_to :item
-- has_one :history
+- has_one :address
 
 
 
@@ -63,14 +61,13 @@
 
 | Column             | Type       | Options                        |
 | ------------------ | ---------- | ------------------------------ |
-| post_code          | strings    | null: false                    |
+| post_code          | string     | null: false                    |
 | city_id            | integer    | null: false                    |
-| municipalities     | strings    | null: false                    |
-| address            | strings    | null: false                    |
-| building           | strings    |                                |
-| tel                | strings    | null: false                    |
+| municipalities     | string     | null: false                    |
+| address            | string     | null: false                    |
+| building           | string     |                                |
+| tel                | string     | null: false                    |
 
 ### Association
 
-- belongs_to :item
 - belongs_to :history

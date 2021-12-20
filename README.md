@@ -31,7 +31,7 @@
 | status_id          | integer    | null: false                    |
 | charge_id          | integer    | null: false                    |
 | city_id            | integer    | null: false                    |
-| day_id             | integer    | null: false                    |
+| delivery_id        | integer    | null: false                    |
 | price              | integer    | null: false                    |
 
 

@@ -67,6 +67,7 @@
 | address            | string     | null: false                    |
 | building           | string     |                                |
 | tel                | string     | null: false                    |
+| history            | references | null: false, foreign_key: true |
 
 ### Association
 

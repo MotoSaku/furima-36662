@@ -24,7 +24,7 @@
                 <mxCell id="6" value="items（商品出品）" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
                     <mxGeometry x="540" y="401" width="120" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="13" value="&lt;ul&gt;&lt;li&gt;item_name&lt;/li&gt;&lt;li&gt;user （出品者）&lt;/li&gt;&lt;li&gt;price&lt;/li&gt;&lt;li&gt;category&lt;/li&gt;&lt;li&gt;overview（商品説明）&lt;/li&gt;&lt;li&gt;status（商品の状態）&lt;/li&gt;&lt;li&gt;city（発送元地域）&lt;/li&gt;&lt;li&gt;cgage（配送手数料）&lt;/li&gt;&lt;li&gt;delivery（発送日数）&lt;/li&gt;&lt;li&gt;image（商品画像）&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" vertex="1" parent="1">
+                <mxCell id="13" value="&lt;ul&gt;&lt;li&gt;item_name&lt;/li&gt;&lt;li&gt;user （出品者）&lt;/li&gt;&lt;li&gt;price&lt;/li&gt;&lt;li&gt;category&lt;/li&gt;&lt;li&gt;overview_id（商品説明）&lt;/li&gt;&lt;li&gt;status_id（商品の状態）&lt;/li&gt;&lt;li&gt;city_id（発送元地域）&lt;/li&gt;&lt;li&gt;cgage_id（配送手数料）&lt;/li&gt;&lt;li&gt;delivery_id（発送日数）&lt;/li&gt;&lt;li&gt;image（商品画像）&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" vertex="1" parent="1">
                     <mxGeometry x="480" y="420" width="220" height="220" as="geometry"/>
                 </mxCell>
                 <mxCell id="47" style="edgeStyle=none;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;fontSize=20;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;" edge="1" parent="1" source="14">
@@ -53,7 +53,7 @@
                 <mxCell id="20" value="addresses（発送先情報）" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
                     <mxGeometry x="97.5" y="680" width="150" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="21" value="&lt;ul&gt;&lt;li&gt;post_code（郵便番号）&lt;/li&gt;&lt;li&gt;cuty（都道府県）&lt;/li&gt;&lt;li&gt;municipalities（市区町村）&lt;/li&gt;&lt;li&gt;address（住所）&lt;/li&gt;&lt;li&gt;building（建物名：任意）&lt;/li&gt;&lt;li&gt;tel&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" vertex="1" parent="1">
+                <mxCell id="21" value="&lt;ul&gt;&lt;li&gt;post_code（郵便番号）&lt;/li&gt;&lt;li&gt;cuty_id（都道府県）&lt;/li&gt;&lt;li&gt;municipalities（市区町村）&lt;/li&gt;&lt;li&gt;address（住所）&lt;/li&gt;&lt;li&gt;building（建物名：任意）&lt;/li&gt;&lt;li&gt;tel&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" vertex="1" parent="1">
                     <mxGeometry x="70" y="705" width="190" height="185" as="geometry"/>
                 </mxCell>
                 <mxCell id="35" style="edgeStyle=none;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;fontSize=20;startArrow=diamondThin;startFill=1;endArrow=diamondThin;endFill=1;" edge="1" parent="1" source="32">

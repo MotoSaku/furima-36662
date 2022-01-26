@@ -1,7 +1,9 @@
 class OrdersController < ApplicationController
+  before_action :authenticate_user!
 
   def index
     @order = Order.new
+    @item = Item.find(params[:item_id])
   end
 
   def create
@@ -10,7 +12,7 @@ class OrdersController < ApplicationController
       @order.save
       return redirect_to root_path
     else
-      render 'index'
+      render :index
     end
   end
 

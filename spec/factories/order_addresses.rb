@@ -4,7 +4,7 @@ FactoryBot.define do
     city_id { 3 }
     municipalities { 'テスト市' }
     address { 'テスト町1-1' }
-    building { ' ' }
+    building { 'テストビル101' }
     tel { '09011112222' }
     token { 'test123456789test' }
   end

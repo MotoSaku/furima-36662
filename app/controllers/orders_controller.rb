@@ -2,18 +2,17 @@ class OrdersController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @order = Order.new
-    @item = Item.find(params[:item_id])
+    set_item
     @order_address = OrderAddress.new
 
-    if current_user.id == @item.user_id
+    if current_user.id != @item.user_id || @item.order.present?
       redirect_to root_path
     end
   end
 
   def create
+    set_item
     @order_address = OrderAddress.new(order_params)
-    @item = Item.find(params[:item_id])
 
     if @order_address.valid?
       pay_item
@@ -27,7 +26,7 @@ class OrdersController < ApplicationController
   private
 
   def order_params
-    params.require(:order_address).permit(:post_code, :city_id, :municipalities, :address, :building, :tel, :price).merge(user_id: current_user.id, item_id: params[:item_id], token: params[:token])
+    params.require(:order_address).permit(:post_code, :city_id, :municipalities, :address, :building, :tel).merge(user_id: current_user.id, item_id: params[:item_id], token: params[:token])
   end
 
   def pay_item
@@ -37,6 +36,10 @@ class OrdersController < ApplicationController
       card: order_params[:token],
       currency: 'jpy'
     )
+  end
+
+  def set_item
+    @item = Item.find(params[:id])
   end
 
 end

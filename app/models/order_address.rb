@@ -7,8 +7,9 @@ class OrderAddress
     validates :city_id, numericality: { other_than: 1, message: "is can't be blank" } 
     validates :municipalities
     validates :address
-    validates :tel, format: {with: /\A[0-9]{10,11}/, message: "is invalid." }
+    validates :tel, format: {with: /\A[0-9]{10,11}\z/, message: "is invalid." }
     validates :token
+    validates :user_id
   end
 
 

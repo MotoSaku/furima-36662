@@ -20,9 +20,11 @@ class ItemsController < ApplicationController
   end
 
   def show
+    set_item
   end
 
   def edit
+    set_item
     if current_user.id == @item.user_id && !@item.order.present?
       render :edit
     else
@@ -31,7 +33,9 @@ class ItemsController < ApplicationController
   end
 
   def update
-    if @item.update(item_params)
+    set_item
+    if current_user.id == @item.user_id
+      @item.update(item_params)
       redirect_to item_path, method: :get
     else
       render :edit
@@ -39,6 +43,7 @@ class ItemsController < ApplicationController
   end
 
   def destroy
+    set_item
     if current_user.id == @item.user_id
       @item.destroy
       redirect_to root_path
